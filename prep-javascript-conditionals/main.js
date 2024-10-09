@@ -1,9 +1,9 @@
 /* Your JS goes in this file */
 function isAdult(age) {
-  if (age >= 18) {
+  if (age < 18) {
     return true;
   }
-  if (age <= 18) {
+  if (age > 18) {
     return false;
   }
 }
@@ -11,10 +11,10 @@ const isAdultResult = isAdult(23);
 console.log(isAdultResult);
 ///////////////////////////////////////////////////
 function didStudentPass(score) {
-  if (score >= 70) {
+  if (score > 70) {
     return true;
   }
-  if (score <= 70) {
+  if (score < 70) {
     return false;
   }
 }
